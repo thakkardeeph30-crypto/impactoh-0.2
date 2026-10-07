@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#211B15" />
+      <stop offset="100%" stop-color="#140E0A" />
+    </linearGradient>
+    <pattern id="blueprintGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#FFF8F2" stroke-width="0.75" stroke-opacity="0.04"/>
+      <path d="M 200 0 L 0 0 0 200" fill="none" stroke="#EF7625" stroke-width="1" stroke-opacity="0.07"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#EF7625"/>
+    </marker>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)" />
+  <rect width="100%" height="100%" fill="url(#blueprintGrid)" />
+
+  <!-- Outer Technical Border -->
+  <rect x="24" y="24" width="1152" height="752" rx="18" fill="none" stroke="#FFF8F2" stroke-opacity="0.12" stroke-width="1.5" />
+  <rect x="34" y="34" width="1132" height="732" rx="12" fill="none" stroke="#EF7625" stroke-opacity="0.25" stroke-width="1" stroke-dasharray="8 6"/>
+
+  <!-- Corner Brackets -->
+  <path d="M 24 55 L 24 24 L 55 24" fill="none" stroke="#EF7625" stroke-width="3"/>
+  <path d="M 1176 55 L 1176 24 L 1145 24" fill="none" stroke="#EF7625" stroke-width="3"/>
+  <path d="M 24 745 L 24 776 L 55 776" fill="none" stroke="#EF7625" stroke-width="3"/>
+  <path d="M 1176 745 L 1176 776 L 1145 776" fill="none" stroke="#EF7625" stroke-width="3"/>
+
+  <!-- Top Metadata Header -->
+  <g transform="translate(50, 56)">
+    <rect x="0" y="0" width="auto" height="24" rx="5" fill="#EF7625" fill-opacity="0.18" stroke="#EF7625" stroke-width="1.2"/>
+    <text x="12" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace" font-size="11" font-weight="800" fill="#EF7625" letter-spacing="1.5">STAGE 02: COMPETITOR BENCHMARK</text>
+    <text x="1100" y="16" font-family="monospace" font-size="11" fill="#FFF8F2" opacity="0.45" text-anchor="end">1200 × 800 PX • PLACEHOLDER</text>
+  </g>
+
+  <!-- Body Graphic Schematic -->
+  
+        <g transform="translate(600, 350)">
+            <!-- Left Side: Existing Industrial Indicators -->
+            <g transform="translate(-290, 0)">
+                <rect x="-240" y="-170" width="480" height="340" rx="16" fill="#1B1510" stroke="#FFF8F2" stroke-opacity="0.2" stroke-width="2"/>
+                <rect x="-240" y="-170" width="480" height="46" rx="16 16 0 0" fill="#2B231B"/>
+                <text x="-215" y="-140" font-family="sans-serif" font-size="16" font-weight="800" fill="#FFF8F2">Existing Impact Indicators (e.g. ShockWatch)</text>
+                
+                <!-- Schematic of industrial shock tube -->
+                <g transform="translate(0, -70)">
+                    <rect x="-160" y="-22" width="320" height="44" rx="10" fill="#261E17" stroke="#FFF8F2" stroke-opacity="0.3"/>
+                    <rect x="-100" y="-8" width="200" height="16" rx="6" fill="#140E0A" stroke="#FFF8F2" stroke-opacity="0.5"/>
+                    <circle cx="-60" cy="0" r="6" fill="#FF5252"/>
+                    <text x="0" y="28" font-family="monospace" font-size="10" fill="#FFF8F2" opacity="0.6" text-anchor="middle">CAPILLARY DYE / TUBE SENSOR</text>
+                </g>
+
+                <!-- Points -->
+                <g transform="translate(-215, 0)" font-family="sans-serif" font-size="13" fill="#FFF8F2">
+                    <text y="0" opacity="0.9"><tspan fill="#FF7043" font-weight="700">Primary Purpose:</tspan> Freight damage claims &amp; freight insurance</text>
+                    <text y="30" opacity="0.9"><tspan fill="#FF7043" font-weight="700">Target Usage:</tspan> Industrial logistics, heavy pallet shipping</text>
+                    <text y="60" opacity="0.9"><tspan fill="#FF7043" font-weight="700">Product Form:</tspan> Adhesive warning label sticker</text>
+                    <text y="90" opacity="0.9"><tspan fill="#FF7043" font-weight="700">Personalization:</tspan> None — purely warning-oriented</text>
+                    <text y="120" opacity="0.9"><tspan fill="#FF7043" font-weight="700">Consumer Fit:</tspan> Low consumer adoption and everyday appeal</text>
+                </g>
+            </g>
+
+            <!-- Center VS Icon -->
+            <circle cx="0" cy="0" r="28" fill="#EF7625" />
+            <text x="0" y="6" font-family="sans-serif" font-size="16" font-weight="900" fill="#2B231B" text-anchor="middle">VS</text>
+
+            <!-- Right Side: ImpactOh Approach -->
+            <g transform="translate(290, 0)">
+                <rect x="-240" y="-170" width="480" height="340" rx="16" fill="#291F17" stroke="#EF7625" stroke-width="2.5"/>
+                <rect x="-240" y="-170" width="480" height="46" rx="16 16 0 0" fill="#EF7625"/>
+                <text x="-215" y="-140" font-family="sans-serif" font-size="16" font-weight="800" fill="#2B231B">ImpactOh Design Direction</text>
+                
+                <!-- Schematic of consumer modular badge -->
+                <g transform="translate(0, -70)">
+                    <rect x="-140" y="-22" width="280" height="44" rx="12" fill="#1C1611" stroke="#EF7625" stroke-width="1.8"/>
+                    <rect x="-120" y="-14" width="70" height="28" rx="8" fill="#EF7625" />
+                    <text x="-85" y="4" font-family="sans-serif" font-size="10" font-weight="800" fill="#2B231B" text-anchor="middle">BADGE</text>
+                    <circle cx="20" cy="0" r="10" fill="#FFF8F2" stroke="#EF7625" stroke-width="2"/>
+                    <text x="75" y="4" font-family="sans-serif" font-size="10" font-weight="700" fill="#EF7625">CLIP LOCK</text>
+                    <text x="0" y="28" font-family="monospace" font-size="10" fill="#EF7625" text-anchor="middle">CONSUMER LUGGAGE ACCESSORY</text>
+                </g>
+
+                <!-- Points -->
+                <g transform="translate(-215, 0)" font-family="sans-serif" font-size="13" fill="#FFF8F2">
+                    <text y="0" opacity="0.95"><tspan fill="#EF7625" font-weight="700">Primary Purpose:</tspan> Luggage personality + Impact awareness</text>
+                    <text y="30" opacity="0.95"><tspan fill="#EF7625" font-weight="700">Target Usage:</tspan> Frequent flyers, modern travel &amp; backpacks</text>
+                    <text y="60" opacity="0.95"><tspan fill="#EF7625" font-weight="700">Product Form:</tspan> Reusable, durable clip-on luggage accessory</text>
+                    <text y="90" opacity="0.95"><tspan fill="#EF7625" font-weight="700">Personalization:</tspan> High — collectible, customizable faceplates</text>
+                    <text y="120" opacity="0.95"><tspan fill="#EF7625" font-weight="700">Consumer Fit:</tspan> High everyday appeal and aesthetic identity</text>
+                </g>
+            </g>
+        </g>
+        
+
+  <!-- Bottom Title and Annotation (for large placeholders) -->
+  
+  <g transform="translate(600.0, 715)">
+    <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif" font-size="23" font-weight="800" fill="#FFF8F2" text-anchor="middle" letter-spacing="-0.4">Existing Solutions &amp; Competitor Research Matrix</text>
+    <text x="0" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="400" fill="#FFF8F2" opacity="0.7" text-anchor="middle">Analysis of industrial transit sensors (e.g. ShockWatch) vs. the consumer-oriented ImpactOh design</text>
+    <text x="0" y="46" font-family="monospace" font-size="10" fill="#EF7625" opacity="0.85" text-anchor="middle">IMPACTOH STARTUP PROJECT • BUZZTECH 50-DAY CHALLENGE</text>
+  </g>
+  
+
+</svg>

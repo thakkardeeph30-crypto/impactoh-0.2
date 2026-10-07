@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1711" />
+      <stop offset="100%" stop-color="#140E0A" />
+    </linearGradient>
+    <pattern id="blueprintGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#FFF8F2" stroke-width="0.75" stroke-opacity="0.04"/>
+      <path d="M 200 0 L 0 0 0 200" fill="none" stroke="#EF7625" stroke-width="1" stroke-opacity="0.07"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#EF7625"/>
+    </marker>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)" />
+  <rect width="100%" height="100%" fill="url(#blueprintGrid)" />
+
+  <!-- Outer Technical Border -->
+  <rect x="24" y="24" width="1152" height="752" rx="18" fill="none" stroke="#FFF8F2" stroke-opacity="0.12" stroke-width="1.5" />
+  <rect x="34" y="34" width="1132" height="732" rx="12" fill="none" stroke="#EF7625" stroke-opacity="0.25" stroke-width="1" stroke-dasharray="8 6"/>
+
+  <!-- Corner Brackets -->
+  <path d="M 24 55 L 24 24 L 55 24" fill="none" stroke="#EF7625" stroke-width="3"/>
+  <path d="M 1176 55 L 1176 24 L 1145 24" fill="none" stroke="#EF7625" stroke-width="3"/>
+  <path d="M 24 745 L 24 776 L 55 776" fill="none" stroke="#EF7625" stroke-width="3"/>
+  <path d="M 1176 745 L 1176 776 L 1145 776" fill="none" stroke="#EF7625" stroke-width="3"/>
+
+  <!-- Top Metadata Header -->
+  <g transform="translate(50, 56)">
+    <rect x="0" y="0" width="auto" height="24" rx="5" fill="#EF7625" fill-opacity="0.18" stroke="#EF7625" stroke-width="1.2"/>
+    <text x="12" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace" font-size="11" font-weight="800" fill="#EF7625" letter-spacing="1.5">STAGE 09: PHYSICAL PROTOTYPE (VERSION 1 ONLY)</text>
+    <text x="1100" y="16" font-family="monospace" font-size="11" fill="#FFF8F2" opacity="0.45" text-anchor="end">1200 × 800 PX • PLACEHOLDER</text>
+  </g>
+
+  <!-- Body Graphic Schematic -->
+  
+        <g transform="translate(600, 350)">
+            <!-- Build plate &amp; Additive Manufacturing Graphic -->
+            <g transform="translate(-160, 0)">
+                <!-- Elliptical heated bed -->
+                <ellipse cx="0" cy="90" rx="220" ry="40" fill="#150F0A" stroke="#EF7625" stroke-width="2" stroke-dasharray="8 6"/>
+                <ellipse cx="0" cy="90" rx="170" ry="28" fill="#221A12" stroke="#FFF8F2" stroke-opacity="0.3"/>
+
+                <!-- Layered 3D Printed Prototype Model -->
+                <path d="M -100 40 C -100 0, 100 0, 100 40 L 100 80 C 100 100, -100 100, -100 80 Z" fill="#EF7625" fill-opacity="0.9" stroke="#FFF8F2" stroke-width="2.5"/>
+                <!-- Horizontal FDM layer lines -->
+                <line x1="-98" y1="48" x2="98" y2="48" stroke="#2B231B" stroke-width="1.8" stroke-opacity="0.4"/>
+                <line x1="-98" y1="56" x2="98" y2="56" stroke="#2B231B" stroke-width="1.8" stroke-opacity="0.4"/>
+                <line x1="-98" y1="64" x2="98" y2="64" stroke="#2B231B" stroke-width="1.8" stroke-opacity="0.4"/>
+                <line x1="-98" y1="72" x2="98" y2="72" stroke="#2B231B" stroke-width="1.8" stroke-opacity="0.4"/>
+
+                <!-- Faceplate Emblem on 3D Printed Object -->
+                <rect x="-50" y="46" width="100" height="26" rx="6" fill="#2B231B"/>
+                <text x="0" y="63" font-family="sans-serif" font-size="11" font-weight="900" fill="#FFF8F2" text-anchor="middle">IMPACT<tspan fill="#EF7625">OH</tspan></text>
+
+                <!-- Extruder Nozzle Representation -->
+                <polygon points="-12,-60 12,-60 6,-30 -6,-30" fill="#FFF8F2"/>
+                <polygon points="-6,-30 6,-30 0,-15" fill="#EF7625"/>
+                <line x1="0" y1="-15" x2="0" y2="15" stroke="#EF7625" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="0" cy="15" r="4" fill="#FF5252"/>
+            </g>
+
+            <!-- Prototype Verification Checklist Card -->
+            <g transform="translate(240, -130)">
+                <rect x="0" y="0" width="300" height="270" rx="14" fill="#261E16" stroke="#2E7D32" stroke-width="2"/>
+                <rect x="0" y="0" width="300" height="38" rx="14 14 0 0" fill="#2E7D32"/>
+                <text x="20" y="24" font-family="sans-serif" font-size="12" font-weight="900" fill="#FFFFFF" letter-spacing="1">✓ 3D PRINTING COMPLETED</text>
+
+                <g transform="translate(20, 65)" font-family="monospace" font-size="11.5" fill="#FFF8F2">
+                    <text y="0" fill="#27C93F">✓ Physical Unit Fabricated</text>
+                    <text y="28" fill="#27C93F">✓ CAD Dimensions Verified</text>
+                    <text y="56" fill="#27C93F">✓ Component Fit Evaluated</text>
+                    <text y="84" fill="#27C93F">✓ Faceplate Detachable</text>
+                    <line x1="0" y1="105" x2="260" y2="105" stroke="#FFF8F2" stroke-opacity="0.1" stroke-width="1"/>
+                    <text y="130" fill="#EF7625" font-weight="700">NEXT STAGE (PENDING):</text>
+                    <text y="152" fill="#FFF8F2" opacity="0.8">⏳ Impact Drop Testing</text>
+                    <text y="174" fill="#FFF8F2" opacity="0.8">⏳ Mechanism Calibration</text>
+                </g>
+            </g>
+        </g>
+        
+
+  <!-- Bottom Title and Annotation (for large placeholders) -->
+  
+  <g transform="translate(600.0, 715)">
+    <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif" font-size="23" font-weight="800" fill="#FFF8F2" text-anchor="middle" letter-spacing="-0.4">3D-Printed Physical Prototype (Version 1)</text>
+    <text x="0" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="400" fill="#FFF8F2" opacity="0.7" text-anchor="middle">Fabricated physical unit from completed CAD design for initial assembly and form-factor verification</text>
+    <text x="0" y="46" font-family="monospace" font-size="10" fill="#EF7625" opacity="0.85" text-anchor="middle">IMPACTOH STARTUP PROJECT • BUZZTECH 50-DAY CHALLENGE</text>
+  </g>
+  
+
+</svg>

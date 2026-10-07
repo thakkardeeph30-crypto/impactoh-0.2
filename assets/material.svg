@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#221A14" />
+      <stop offset="100%" stop-color="#140E0A" />
+    </linearGradient>
+    <pattern id="blueprintGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#FFF8F2" stroke-width="0.75" stroke-opacity="0.04"/>
+      <path d="M 200 0 L 0 0 0 200" fill="none" stroke="#EF7625" stroke-width="1" stroke-opacity="0.07"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#EF7625"/>
+    </marker>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)" />
+  <rect width="100%" height="100%" fill="url(#blueprintGrid)" />
+
+  <!-- Outer Technical Border -->
+  <rect x="24" y="24" width="1152" height="752" rx="18" fill="none" stroke="#FFF8F2" stroke-opacity="0.12" stroke-width="1.5" />
+  <rect x="34" y="34" width="1132" height="732" rx="12" fill="none" stroke="#EF7625" stroke-opacity="0.25" stroke-width="1" stroke-dasharray="8 6"/>
+
+  <!-- Corner Brackets -->
+  <path d="M 24 55 L 24 24 L 55 24" fill="none" stroke="#EF7625" stroke-width="3"/>
+  <path d="M 1176 55 L 1176 24 L 1145 24" fill="none" stroke="#EF7625" stroke-width="3"/>
+  <path d="M 24 745 L 24 776 L 55 776" fill="none" stroke="#EF7625" stroke-width="3"/>
+  <path d="M 1176 745 L 1176 776 L 1145 776" fill="none" stroke="#EF7625" stroke-width="3"/>
+
+  <!-- Top Metadata Header -->
+  <g transform="translate(50, 56)">
+    <rect x="0" y="0" width="auto" height="24" rx="5" fill="#EF7625" fill-opacity="0.18" stroke="#EF7625" stroke-width="1.2"/>
+    <text x="12" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace" font-size="11" font-weight="800" fill="#EF7625" letter-spacing="1.5">STAGE 08: MATERIAL FINALISATION</text>
+    <text x="1100" y="16" font-family="monospace" font-size="11" fill="#FFF8F2" opacity="0.45" text-anchor="end">1200 × 800 PX • PLACEHOLDER</text>
+  </g>
+
+  <!-- Body Graphic Schematic -->
+  
+        <g transform="translate(600, 350)">
+            <!-- 4 Structured Evaluation Criterion Cards -->
+            <!-- 1. Mechanical Strength -->
+            <g transform="translate(-240, -85)">
+                <rect x="-210" y="-70" width="420" height="130" rx="14" fill="#291F17" stroke="#EF7625" stroke-width="2"/>
+                <circle cx="-165" cy="-20" r="22" fill="#EF7625" fill-opacity="0.2"/>
+                <text x="-165" y="-14" font-family="sans-serif" font-size="14" font-weight="900" fill="#EF7625" text-anchor="middle">01</text>
+                <text x="-125" y="-28" font-family="sans-serif" font-size="15" font-weight="800" fill="#FFF8F2">Strength &amp; Shock Resistance</text>
+                <text x="-125" y="-8" font-family="sans-serif" font-size="12" fill="#FFF8F2" opacity="0.8">Withstands rough airport conveyor impacts and falls.</text>
+                <text x="-125" y="12" font-family="monospace" font-size="11" fill="#EF7625">CRITERION: High impact strength &amp; shear durability</text>
+            </g>
+
+            <!-- 2. Availability -->
+            <g transform="translate(240, -85)">
+                <rect x="-210" y="-70" width="420" height="130" rx="14" fill="#291F17" stroke="#EF7625" stroke-width="2"/>
+                <circle cx="-165" cy="-20" r="22" fill="#EF7625" fill-opacity="0.2"/>
+                <text x="-165" y="-14" font-family="sans-serif" font-size="14" font-weight="900" fill="#EF7625" text-anchor="middle">02</text>
+                <text x="-125" y="-28" font-family="sans-serif" font-size="15" font-weight="800" fill="#FFF8F2">Material Availability</text>
+                <text x="-125" y="-8" font-family="sans-serif" font-size="12" fill="#FFF8F2" opacity="0.8">Readily procurable engineering filament and stock.</text>
+                <text x="-125" y="12" font-family="monospace" font-size="11" fill="#EF7625">CRITERION: Domestic supply chain reliability</text>
+            </g>
+
+            <!-- 3. Manufacturability -->
+            <g transform="translate(-240, 75)">
+                <rect x="-210" y="-70" width="420" height="130" rx="14" fill="#291F17" stroke="#EF7625" stroke-width="2"/>
+                <circle cx="-165" cy="-20" r="22" fill="#EF7625" fill-opacity="0.2"/>
+                <text x="-165" y="-14" font-family="sans-serif" font-size="14" font-weight="900" fill="#EF7625" text-anchor="middle">03</text>
+                <text x="-125" y="-28" font-family="sans-serif" font-size="15" font-weight="800" fill="#FFF8F2">Manufacturability &amp; Prototyping</text>
+                <text x="-125" y="-8" font-family="sans-serif" font-size="12" fill="#FFF8F2" opacity="0.8">Compatible with FDM 3D printing and injection molding.</text>
+                <text x="-125" y="12" font-family="monospace" font-size="11" fill="#EF7625">CRITERION: Precise dimensional tolerances (±0.2mm)</text>
+            </g>
+
+            <!-- 4. Cost Efficiency -->
+            <g transform="translate(240, 75)">
+                <rect x="-210" y="-70" width="420" height="130" rx="14" fill="#291F17" stroke="#EF7625" stroke-width="2"/>
+                <circle cx="-165" cy="-20" r="22" fill="#EF7625" fill-opacity="0.2"/>
+                <text x="-165" y="-14" font-family="sans-serif" font-size="14" font-weight="900" fill="#EF7625" text-anchor="middle">04</text>
+                <text x="-125" y="-28" font-family="sans-serif" font-size="15" font-weight="800" fill="#FFF8F2">Cost &amp; Weight Profile</text>
+                <text x="-125" y="-8" font-family="sans-serif" font-size="12" fill="#FFF8F2" opacity="0.8">Affordable unit economics without luggage baggage weight penalty.</text>
+                <text x="-125" y="12" font-family="monospace" font-size="11" fill="#EF7625">CRITERION: Optimal cost-to-performance ratio</text>
+            </g>
+        </g>
+        
+
+  <!-- Bottom Title and Annotation (for large placeholders) -->
+  
+  <g transform="translate(600.0, 715)">
+    <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif" font-size="23" font-weight="800" fill="#FFF8F2" text-anchor="middle" letter-spacing="-0.4">Material Evaluation &amp; Selection Matrix</text>
+    <text x="0" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="400" fill="#FFF8F2" opacity="0.7" text-anchor="middle">Systematic assessment across mechanical resilience, availability, manufacturability, and cost</text>
+    <text x="0" y="46" font-family="monospace" font-size="10" fill="#EF7625" opacity="0.85" text-anchor="middle">IMPACTOH STARTUP PROJECT • BUZZTECH 50-DAY CHALLENGE</text>
+  </g>
+  
+
+</svg>

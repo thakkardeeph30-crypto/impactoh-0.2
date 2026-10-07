@@ -1,0 +1,50 @@
+import subprocess
+import os
+
+def render_logo(filename, text_color):
+    svg_content = f'''<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="160" viewBox="0 0 600 160">
+  <defs>
+    <linearGradient id="orangeGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF8A3D" />
+      <stop offset="100%" stop-color="#EF7625" />
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(10, 20)">
+    <!-- Icon Symbol -->
+    <rect x="0" y="0" width="120" height="120" rx="32" fill="url(#orangeGlow)" />
+    <!-- Concentric Shock Rings -->
+    <circle cx="60" cy="60" r="38" fill="none" stroke="#2B231B" stroke-width="6.5" stroke-dasharray="16 6"/>
+    <circle cx="60" cy="60" r="24" fill="#FFF8F2" />
+    <circle cx="60" cy="60" r="10" fill="#2B231B" />
+    <path d="M 32 26 C 44 14, 76 14, 88 26" fill="none" stroke="#FFF8F2" stroke-width="5" stroke-linecap="round"/>
+    
+    <!-- Wordmark -->
+    <text x="146" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Plus Jakarta Sans', 'Inter', sans-serif" font-size="74" font-weight="900" fill="{text_color}" letter-spacing="-2.5">Impact<tspan fill="#EF7625">Oh</tspan></text>
+    
+    <!-- Tagline -->
+    <text x="150" y="112" font-family="-apple-system, BlinkMacSystemFont, 'JetBrains Mono', monospace" font-size="14" font-weight="700" fill="#EF7625" letter-spacing="3.2">SMART LUGGAGE ACCESSORY</text>
+  </g>
+</svg>'''
+
+    svg_path = f"assets/{filename}.svg"
+    png_path = os.path.abspath(f"assets/{filename}.png")
+
+    with open(svg_path, "w") as f:
+        f.write(svg_content)
+
+    abs_svg = os.path.abspath(svg_path)
+    subprocess.run([
+        "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+        "--headless",
+        f"--screenshot={png_path}",
+        "--window-size=600,160",
+        "--hide-scrollbars",
+        "--default-background-color=00000000",
+        f"file://{abs_svg}"
+    ], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    print(f"Rendered assets/{filename}.png")
+
+render_logo("impactoh-logo", "#2B231B")
+render_logo("impactoh-logo-light", "#FFF8F2")

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#231B14" />
+      <stop offset="100%" stop-color="#140E0A" />
+    </linearGradient>
+    <pattern id="blueprintGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#FFF8F2" stroke-width="0.75" stroke-opacity="0.04"/>
+      <path d="M 200 0 L 0 0 0 200" fill="none" stroke="#EF7625" stroke-width="1" stroke-opacity="0.07"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#EF7625"/>
+    </marker>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)" />
+  <rect width="100%" height="100%" fill="url(#blueprintGrid)" />
+
+  <!-- Outer Technical Border -->
+  <rect x="24" y="24" width="1152" height="752" rx="18" fill="none" stroke="#FFF8F2" stroke-opacity="0.12" stroke-width="1.5" />
+  <rect x="34" y="34" width="1132" height="732" rx="12" fill="none" stroke="#EF7625" stroke-opacity="0.25" stroke-width="1" stroke-dasharray="8 6"/>
+
+  <!-- Corner Brackets -->
+  <path d="M 24 55 L 24 24 L 55 24" fill="none" stroke="#EF7625" stroke-width="3"/>
+  <path d="M 1176 55 L 1176 24 L 1145 24" fill="none" stroke="#EF7625" stroke-width="3"/>
+  <path d="M 24 745 L 24 776 L 55 776" fill="none" stroke="#EF7625" stroke-width="3"/>
+  <path d="M 1176 745 L 1176 776 L 1145 776" fill="none" stroke="#EF7625" stroke-width="3"/>
+
+  <!-- Top Metadata Header -->
+  <g transform="translate(50, 56)">
+    <rect x="0" y="0" width="auto" height="24" rx="5" fill="#EF7625" fill-opacity="0.18" stroke="#EF7625" stroke-width="1.2"/>
+    <text x="12" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace" font-size="11" font-weight="800" fill="#EF7625" letter-spacing="1.5">STAGE 04: PRODUCT CONCEPT</text>
+    <text x="1100" y="16" font-family="monospace" font-size="11" fill="#FFF8F2" opacity="0.45" text-anchor="end">1200 × 800 PX • PLACEHOLDER</text>
+  </g>
+
+  <!-- Body Graphic Schematic -->
+  
+        <g transform="translate(600, 360)">
+            <!-- Exploded schematic view of the accessory -->
+            <!-- 1. Luggage Strap Connector -->
+            <g transform="translate(-360, -40)">
+                <rect x="-30" y="-20" width="60" height="120" rx="14" fill="#2B231B" stroke="#EF7625" stroke-width="2"/>
+                <path d="M -15 20 C -15 0, 15 0, 15 20 L 15 60 C 15 80, -15 80, -15 60 Z" fill="#FFF8F2" fill-opacity="0.1"/>
+                <text x="0" y="125" font-family="monospace" font-size="11" fill="#EF7625" text-anchor="middle">STRAP MOUNT</text>
+            </g>
+            <line x1="-330" y1="20" x2="-240" y2="20" stroke="#EF7625" stroke-width="2" stroke-dasharray="6 4"/>
+
+            <!-- 2. Main Enclosure (Chassis) -->
+            <g transform="translate(-100, -80)">
+                <rect x="-120" y="-40" width="240" height="200" rx="24" fill="#2B231B" stroke="#EF7625" stroke-width="2.5"/>
+                <rect x="-100" y="-20" width="200" height="160" rx="16" fill="#1C1611" stroke="#FFF8F2" stroke-opacity="0.15" stroke-width="1.5"/>
+                <!-- Internal mechanism pocket -->
+                <rect x="-70" y="10" width="140" height="100" rx="12" fill="#261E17" stroke="#EF7625" stroke-width="1.5" stroke-dasharray="6 4"/>
+                <text x="0" y="45" font-family="sans-serif" font-size="12" font-weight="700" fill="#EF7625" text-anchor="middle">INTERNAL CAVITY</text>
+                <text x="0" y="65" font-family="sans-serif" font-size="11" fill="#FFF8F2" opacity="0.8" text-anchor="middle">Houses Spring &amp; Latch</text>
+                <text x="0" y="85" font-family="monospace" font-size="10" fill="#FFF8F2" opacity="0.5" text-anchor="middle">Depth: 14mm • Travel: 8mm</text>
+                <text x="0" y="185" font-family="monospace" font-size="11" fill="#EF7625" text-anchor="middle">01. BASE CHASSIS</text>
+            </g>
+            <line x1="20" y1="20" x2="110" y2="20" stroke="#EF7625" stroke-width="2" stroke-dasharray="6 4"/>
+
+            <!-- 3. Customizable Faceplate &amp; Sensor Lens -->
+            <g transform="translate(240, -80)">
+                <rect x="-100" y="-40" width="200" height="200" rx="24" fill="#EF7625" fill-opacity="0.1" stroke="#EF7625" stroke-width="2.5"/>
+                <rect x="-80" y="-20" width="160" height="160" rx="18" fill="#FFF0E5" fill-opacity="0.06" stroke="#FFF8F2" stroke-width="2"/>
+                <!-- Badge custom graphics placeholder -->
+                <circle cx="0" cy="35" r="38" fill="#EF7625" />
+                <path d="M -15 35 L 0 50 L 22 24" fill="none" stroke="#2B231B" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <!-- Indicator Window Aperture -->
+                <rect x="-50" y="85" width="100" height="26" rx="8" fill="#2B231B" stroke="#FFF8F2" stroke-width="1.5"/>
+                <text x="0" y="102" font-family="monospace" font-size="10" font-weight="700" fill="#EF7625" text-anchor="middle">STATUS WINDOW</text>
+                <text x="0" y="185" font-family="monospace" font-size="11" fill="#EF7625" text-anchor="middle">02. MODULAR FACEPLATE</text>
+            </g>
+
+            <!-- Bottom Specs Bar -->
+            <rect x="-420" y="170" width="840" height="42" rx="10" fill="#1A140F" stroke="#FFF8F2" stroke-opacity="0.1"/>
+            <text x="-400" y="196" font-family="monospace" font-size="12" fill="#FFF8F2" opacity="0.8">DIMENSIONS: 68 × 48 × 16 mm</text>
+            <text x="0" y="196" font-family="monospace" font-size="12" fill="#EF7625" text-anchor="middle">WEIGHT ESTIMATE: &lt; 38g</text>
+            <text x="400" y="196" font-family="monospace" font-size="12" fill="#FFF8F2" opacity="0.8" text-anchor="end">INTERFACE: QUICK-RELEASE CLAMP</text>
+        </g>
+        
+
+  <!-- Bottom Title and Annotation (for large placeholders) -->
+  
+  <g transform="translate(600.0, 715)">
+    <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif" font-size="23" font-weight="800" fill="#FFF8F2" text-anchor="middle" letter-spacing="-0.4">ImpactOh Product Concept Architecture</text>
+    <text x="0" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="400" fill="#FFF8F2" opacity="0.7" text-anchor="middle">Modular luggage accessory combining everyday personalization with internal impact detection</text>
+    <text x="0" y="46" font-family="monospace" font-size="10" fill="#EF7625" opacity="0.85" text-anchor="middle">IMPACTOH STARTUP PROJECT • BUZZTECH 50-DAY CHALLENGE</text>
+  </g>
+  
+
+</svg>

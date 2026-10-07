@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#221A13" />
+      <stop offset="100%" stop-color="#140E0A" />
+    </linearGradient>
+    <pattern id="blueprintGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#FFF8F2" stroke-width="0.75" stroke-opacity="0.04"/>
+      <path d="M 200 0 L 0 0 0 200" fill="none" stroke="#EF7625" stroke-width="1" stroke-opacity="0.07"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#EF7625"/>
+    </marker>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)" />
+  <rect width="100%" height="100%" fill="url(#blueprintGrid)" />
+
+  <!-- Outer Technical Border -->
+  <rect x="24" y="24" width="1152" height="752" rx="18" fill="none" stroke="#FFF8F2" stroke-opacity="0.12" stroke-width="1.5" />
+  <rect x="34" y="34" width="1132" height="732" rx="12" fill="none" stroke="#EF7625" stroke-opacity="0.25" stroke-width="1" stroke-dasharray="8 6"/>
+
+  <!-- Corner Brackets -->
+  <path d="M 24 55 L 24 24 L 55 24" fill="none" stroke="#EF7625" stroke-width="3"/>
+  <path d="M 1176 55 L 1176 24 L 1145 24" fill="none" stroke="#EF7625" stroke-width="3"/>
+  <path d="M 24 745 L 24 776 L 55 776" fill="none" stroke="#EF7625" stroke-width="3"/>
+  <path d="M 1176 745 L 1176 776 L 1145 776" fill="none" stroke="#EF7625" stroke-width="3"/>
+
+  <!-- Top Metadata Header -->
+  <g transform="translate(50, 56)">
+    <rect x="0" y="0" width="auto" height="24" rx="5" fill="#EF7625" fill-opacity="0.18" stroke="#EF7625" stroke-width="1.2"/>
+    <text x="12" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace" font-size="11" font-weight="800" fill="#EF7625" letter-spacing="1.5">STAGE 05: MECHANISM DEVELOPMENT</text>
+    <text x="1100" y="16" font-family="monospace" font-size="11" fill="#FFF8F2" opacity="0.45" text-anchor="end">1200 × 800 PX • PLACEHOLDER</text>
+  </g>
+
+  <!-- Body Graphic Schematic -->
+  
+        <g transform="translate(600, 350)">
+            <!-- Main Mechanism Assembly Diagram -->
+            <rect x="-480" y="-150" width="960" height="300" rx="20" fill="#19130D" stroke="#EF7625" stroke-width="2"/>
+            
+            <!-- Anchor Block -->
+            <g transform="translate(-400, 0)">
+                <rect x="-40" y="-90" width="80" height="180" rx="10" fill="#2B231B" stroke="#FFF8F2" stroke-opacity="0.3" stroke-width="2"/>
+                <line x1="-30" y1="-70" x2="30" y2="-70" stroke="#EF7625" stroke-width="2"/>
+                <line x1="-30" y1="0" x2="30" y2="0" stroke="#EF7625" stroke-width="2"/>
+                <line x1="-30" y1="70" x2="30" y2="70" stroke="#EF7625" stroke-width="2"/>
+                <text x="0" y="115" font-family="monospace" font-size="11" fill="#FFF8F2" opacity="0.7" text-anchor="middle">CHASSIS ANCHOR</text>
+            </g>
+
+            <!-- Pre-loaded Compression Spring -->
+            <g transform="translate(-250, 0)">
+                <path d="M -90 0 L -70 -40 L -40 40 L -10 -40 L 20 40 L 50 -40 L 70 40 L 90 0" fill="none" stroke="#EF7625" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                <text x="0" y="68" font-family="monospace" font-size="11" fill="#EF7625" text-anchor="middle">PRE-LOADED SPRING</text>
+                <text x="0" y="85" font-family="sans-serif" font-size="10" fill="#FFF8F2" opacity="0.6" text-anchor="middle">Calibrated Force Threshold</text>
+            </g>
+
+            <!-- Inertial Travel Mass -->
+            <g transform="translate(-60, 0)">
+                <rect x="-70" y="-70" width="140" height="140" rx="14" fill="#EF7625" stroke="#FFF8F2" stroke-width="2.5"/>
+                <text x="0" y="-12" font-family="sans-serif" font-size="15" font-weight="900" fill="#2B231B" text-anchor="middle">INERTIAL</text>
+                <text x="0" y="8" font-family="sans-serif" font-size="15" font-weight="900" fill="#2B231B" text-anchor="middle">MASS</text>
+                <text x="0" y="30" font-family="monospace" font-size="10" fill="#2B231B" text-anchor="middle">m = 8.5g</text>
+                
+                <!-- Travel Vector -->
+                <path d="M -50 -90 L 50 -90" stroke="#FFF8F2" stroke-width="2" marker-end="url(#arrow)"/>
+                <text x="0" y="-100" font-family="monospace" font-size="11" fill="#FFF8F2" text-anchor="middle">TRAVEL PATH →</text>
+                <text x="0" y="115" font-family="monospace" font-size="11" fill="#EF7625" text-anchor="middle">SLIDING CORE</text>
+            </g>
+
+            <!-- Detent &amp; Mechanical Latch -->
+            <g transform="translate(130, 0)">
+                <path d="M -30 -30 L 10 -30 L 40 0 L 10 30 L -30 30 Z" fill="#2B231B" stroke="#FFF8F2" stroke-width="2.5"/>
+                <circle cx="10" cy="0" r="8" fill="#EF7625"/>
+                <text x="0" y="68" font-family="monospace" font-size="11" fill="#FFF8F2" opacity="0.9" text-anchor="middle">RETENTION LATCH</text>
+                <text x="0" y="85" font-family="sans-serif" font-size="10" fill="#FFF8F2" opacity="0.6" text-anchor="middle">Prevents False Trigger</text>
+                <text x="0" y="115" font-family="monospace" font-size="11" fill="#FFF8F2" opacity="0.7" text-anchor="middle">DETENT GATE</text>
+            </g>
+
+            <!-- Trigger Status Window -->
+            <g transform="translate(340, 0)">
+                <rect x="-80" y="-70" width="160" height="140" rx="16" fill="#120D08" stroke="#EF7625" stroke-width="3"/>
+                <!-- Color Indicator Flag -->
+                <rect x="-60" y="-45" width="120" height="90" rx="10" fill="#EF7625" />
+                <text x="0" y="-5" font-family="sans-serif" font-size="14" font-weight="900" fill="#2B231B" text-anchor="middle">IMPACT</text>
+                <text x="0" y="18" font-family="sans-serif" font-size="13" font-weight="900" fill="#2B231B" text-anchor="middle">EXPOSED</text>
+                <text x="0" y="115" font-family="monospace" font-size="11" fill="#EF7625" text-anchor="middle">LOCKED DISPLAY</text>
+            </g>
+
+            <!-- Technical Disclaimer Notice -->
+            <rect x="-480" y="180" width="960" height="38" rx="8" fill="#2B231B" stroke="#EF7625" stroke-width="1"/>
+            <text x="0" y="204" font-family="sans-serif" font-size="11" fill="#FFF8F2" text-anchor="middle">
+                <tspan fill="#EF7625" font-weight="700">ENGINEERING STATUS: </tspan>Digital kinematic model complete. Physical calibration &amp; threshold testing pending physical fabrication.
+            </text>
+        </g>
+        
+
+  <!-- Bottom Title and Annotation (for large placeholders) -->
+  
+  <g transform="translate(600.0, 715)">
+    <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif" font-size="23" font-weight="800" fill="#FFF8F2" text-anchor="middle" letter-spacing="-0.4">Conceptual Mechanical Shock Mechanism</text>
+    <text x="0" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="400" fill="#FFF8F2" opacity="0.7" text-anchor="middle">Kinematic movement response, calibrated spring threshold, and mechanical locking flag</text>
+    <text x="0" y="46" font-family="monospace" font-size="10" fill="#EF7625" opacity="0.85" text-anchor="middle">IMPACTOH STARTUP PROJECT • BUZZTECH 50-DAY CHALLENGE</text>
+  </g>
+  
+
+</svg>
