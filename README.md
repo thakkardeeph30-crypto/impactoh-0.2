@@ -48,13 +48,13 @@ This website was built with strict engineering constraints:
 
 ```text
 impactoh-0.2/
-├── index.html                  # Semantic HTML5 website structure (17 sections)
+├── index.html                  # Semantic HTML5 website structure
 ├── style.css                   # Custom CSS3 stylesheet (Tokens, animations, layout)
+├── logo.jpeg                   # Official brand company logo
 ├── .gitignore                  # Git ignore file
 ├── README.md                   # Project documentation
-├── assets/                     # Vector SVGs and high-resolution blueprint diagrams
-│   ├── impactoh-logo.png       # Official brand logo (Navbar / Light)
-│   ├── impactoh-logo-light.png # High-contrast light brand logo (Footer / Dark)
+├── assets/                     # High-resolution assets
+│   ├── logo.jpeg               # Brand logo asset
 │   ├── product.png             # Exploded product architecture diagram
 │   ├── competitor-research.png # Industrial indicators vs ImpactOh matrix
 │   ├── mechanism.png           # Kinematic threshold-latch schematic

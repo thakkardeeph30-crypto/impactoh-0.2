@@ -224,9 +224,10 @@ ul, ol {
 }
 
 .nav-logo-img {
-  height: 42px;
-  width: auto;
-  border-radius: 6px;
+  height: 48px;
+  width: 48px;
+  object-fit: cover;
+  border-radius: 8px;
   display: block;
 }
 
@@ -1333,21 +1334,12 @@ body:has(#view-version-2:checked) .version-control-bar label[for="view-version-1
   box-shadow: none;
 }
 
-/* Default Version 1 view */
+/* Default Version 2 (CAD / Pre-print phase) */
 .v1-content {
-  display: block;
-}
-
-.v2-content {
-  display: none;
-}
-
-/* When Version 2 is checked via CSS :has() */
-body:has(#view-version-2:checked) .v1-content {
   display: none !important;
 }
 
-body:has(#view-version-2:checked) .v2-content {
+.v2-content {
   display: block !important;
 }
 
@@ -2178,10 +2170,12 @@ body:has(#view-version-2:checked) .v2-content {
 }
 
 .footer-logo-img {
-  height: 42px;
-  width: auto;
+  height: 52px;
+  width: 52px;
+  object-fit: cover;
   margin-bottom: 16px;
-  border-radius: 6px;
+  border-radius: 8px;
+  display: block;
 }
 
 .footer-motto {

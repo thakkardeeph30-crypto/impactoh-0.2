@@ -11,6 +11,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="logo.jpeg">
+  <link rel="apple-touch-icon" href="logo.jpeg">
+
   <!-- Main Stylesheet (No frameworks, pure CSS3) -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -24,7 +28,7 @@
       
       <!-- Brand Logo -->
       <a href="#home" class="nav-brand" aria-label="ImpactOh Homepage">
-        <img src="assets/impactoh-logo.png" alt="ImpactOh - Luggage Accessory with Impact Detection" class="nav-logo-img">
+        <img src="logo.jpeg" alt="ImpactOh - Luggage Accessory with Impact Detection" class="nav-logo-img">
       </a>
 
       <!-- Pure CSS Mobile Menu Toggle Checkbox -->
@@ -40,14 +44,13 @@
         <a href="#home" class="nav-item">Home</a>
         <a href="#about" class="nav-item">About</a>
         <a href="#problem" class="nav-item">Problem</a>
-        <a href="#research" class="nav-item">Research</a>
-        <a href="#product" class="nav-item">Product</a>
-        <a href="#development" class="nav-item">Development</a>
-        <a href="#business-model" class="nav-item">Business Model</a>
-        <a href="#status" class="nav-item">Status</a>
+        <a href="#research" class="nav-item">Benchmarking</a>
+        <a href="#market-research" class="nav-item">Research</a>
+        <a href="#development" class="nav-item">Journey</a>
+        <a href="#materials" class="nav-item">Materials</a>
         
         <div class="nav-cta-wrap">
-          <a href="#product" class="btn btn-primary btn-sm">Explore ImpactOh</a>
+          <a href="#development" class="btn btn-primary btn-sm">Explore Journey</a>
         </div>
       </nav>
 
@@ -81,7 +84,7 @@
 
             <div class="hero-actions">
               <a href="#development" class="btn btn-primary btn-lg">Explore the Journey</a>
-              <a href="#product" class="btn btn-secondary btn-lg">View Product</a>
+              <a href="#about" class="btn btn-secondary btn-lg">About ImpactOh</a>
             </div>
 
             <div class="hero-meta">
@@ -346,22 +349,13 @@
           </table>
         </div>
 
-        <!-- Competitor Research Schematic Card -->
-        <article class="media-placeholder-card">
-          <img src="assets/competitor-research.png" alt="Competitor Research and Industrial Comparison Schematic" width="1200" height="800">
-          <div class="media-caption">
-            <span class="media-caption-text">Comparative Research Analysis: Industrial Warning Indicators vs Consumer Luggage Accessory Direction</span>
-            <span class="media-caption-badge">ASSET: assets/competitor-research.png</span>
-          </div>
-        </article>
-
       </div>
     </section>
 
     <!-- =========================================================================
          5. MARKET RESEARCH
          ========================================================================= -->
-    <section class="section section-alt">
+    <section class="section section-alt" id="market-research">
       <div class="container">
         
         <header class="section-header">
@@ -417,132 +411,16 @@
     </section>
 
     <!-- =========================================================================
-         6. PRODUCT EVOLUTION
+         6. 40-DAY DEVELOPMENT JOURNEY
          ========================================================================= -->
-    <section class="section" id="evolution">
+    <section class="section" id="development">
       <div class="container">
         
         <header class="section-header">
-          <span class="section-badge">05 • Project Milestones</span>
-          <h2 class="section-title">From Idea to ImpactOh</h2>
-          <p class="section-subtitle">A step-by-step visual progression from problem identification to prototype readiness.</p>
-        </header>
-
-        <!-- 9-Stage Evolution Timeline (Horizontal Desktop / Vertical Mobile) -->
-        <div class="evolution-timeline" aria-label="Product Evolution Timeline">
-          
-          <div class="timeline-stage">
-            <div class="stage-badge-top">
-              <span class="stage-number">STAGE 01</span>
-              <span class="stage-indicator-line"></span>
-            </div>
-            <h4 class="stage-name">Impact Detection Idea</h4>
-            <p class="stage-summary">Initial concept of an affordable, compact shock sensor for baggage.</p>
-          </div>
-
-          <div class="timeline-stage">
-            <div class="stage-badge-top">
-              <span class="stage-number">STAGE 02</span>
-              <span class="stage-indicator-line"></span>
-            </div>
-            <h4 class="stage-name">Existing Solution &amp; Competitor Research</h4>
-            <p class="stage-summary">Explored logistics sensors like ShockWatch, mechanism types, and pricing.</p>
-          </div>
-
-          <div class="timeline-stage">
-            <div class="stage-badge-top">
-              <span class="stage-number">STAGE 03</span>
-              <span class="stage-indicator-line"></span>
-            </div>
-            <h4 class="stage-name">Market Research</h4>
-            <p class="stage-summary">Identified occasional-use limitations of standalone shock indicators.</p>
-          </div>
-
-          <div class="timeline-stage">
-            <div class="stage-badge-top">
-              <span class="stage-number">STAGE 04</span>
-              <span class="stage-indicator-line"></span>
-            </div>
-            <h4 class="stage-name">Customisable Luggage Accessory Concept</h4>
-            <p class="stage-summary">Pivoted to a lifestyle accessory with modular customizable styling.</p>
-          </div>
-
-          <div class="timeline-stage">
-            <div class="stage-badge-top">
-              <span class="stage-number">STAGE 05</span>
-              <span class="stage-indicator-line"></span>
-            </div>
-            <h4 class="stage-name">Mechanical Mechanism Development</h4>
-            <p class="stage-summary">Explored spring-loaded inertial mass and mechanical locking latch.</p>
-          </div>
-
-          <div class="timeline-stage">
-            <div class="stage-badge-top">
-              <span class="stage-number">STAGE 06</span>
-              <span class="stage-indicator-line"></span>
-            </div>
-            <h4 class="stage-name">CAD &amp; Mechanism Integration</h4>
-            <p class="stage-summary">Modeled 3D physical housing and nested internal kinematic components.</p>
-          </div>
-
-          <div class="timeline-stage">
-            <div class="stage-badge-top">
-              <span class="stage-number">STAGE 07</span>
-              <span class="stage-indicator-line"></span>
-            </div>
-            <h4 class="stage-name">Fusion 360 Design Review</h4>
-            <p class="stage-summary">Audited movement clearances, component fit, and manufacturing draft angles.</p>
-          </div>
-
-          <div class="timeline-stage">
-            <div class="stage-badge-top">
-              <span class="stage-number">STAGE 08</span>
-              <span class="stage-indicator-line"></span>
-            </div>
-            <h4 class="stage-name">Material Finalisation</h4>
-            <p class="stage-summary">Evaluated polymers for strength, weight, availability, and prototyping cost.</p>
-          </div>
-
-          <div class="timeline-stage">
-            <div class="stage-badge-top">
-              <span class="stage-number">STAGE 09</span>
-              <span class="stage-indicator-line"></span>
-            </div>
-            <h4 class="stage-name">Prototype Stage</h4>
-            <p class="stage-summary">Prepared prototype design for physical assembly evaluation and future testing.</p>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         7. 40-DAY DEVELOPMENT JOURNEY
-         ========================================================================= -->
-    <!-- Hidden Pure CSS Controller for Milestone Switcher (Version 1 vs Version 2) -->
-    <input type="radio" name="milestone-view" id="view-version-1" class="version-radio" checked>
-    <input type="radio" name="milestone-view" id="view-version-2" class="version-radio">
-
-    <section class="section section-alt" id="development">
-      <div class="container">
-        
-        <header class="section-header">
-          <span class="section-badge">06 • Sprint Timeline</span>
+          <span class="section-badge">05 • Sprint Timeline</span>
           <h2 class="section-title">Our 40-Day Journey</h2>
           <p class="section-subtitle">A weekly breakdown of engineering, design iteration, and strategic milestones.</p>
         </header>
-
-        <!-- Pure CSS Milestone View Switcher -->
-        <div class="version-control-bar" role="radiogroup" aria-label="Project Milestone View">
-          <span class="version-switch-title">Milestone View:</span>
-          <label for="view-version-1" class="version-toggle-btn">
-            Version 1 (3D Print Completed)
-          </label>
-          <label for="view-version-2" class="version-toggle-btn">
-            Version 2 (CAD / Pre-Print Phase)
-          </label>
-        </div>
 
         <div class="weeks-grid">
           
@@ -661,7 +539,7 @@
             </div>
           </article>
 
-          <!-- WEEK 6 (VERSION 1 VS VERSION 2 CONDITIONALLY RENDERED VIA CSS) -->
+          <!-- WEEK 6 (VERSION 2: PRE-PRINT CAD STATUS) -->
           <article class="week-card">
             <div>
               <div class="week-header">
@@ -679,28 +557,17 @@
                 <li>Prepared documentation for physical evaluation</li>
               </ul>
 
-              <!-- Version 1 Specific Content -->
-              <div class="v1-content">
-                <div style="background-color: var(--status-complete-bg); border: 1px solid var(--status-complete-border); border-radius: var(--radius-sm); padding: 12px 16px; margin: 16px 0;">
-                  <strong style="color: var(--status-complete); font-size: 0.85rem; display: block; margin-bottom: 4px;">✓ 3D Printing Completed</strong>
-                  <span style="font-size: 0.9rem; color: var(--dark-charcoal);">The first physical prototype was 3D printed from the completed CAD design.</span>
-                </div>
-              </div>
-
-              <!-- Version 2 Specific Content -->
-              <div class="v2-content">
-                <div style="background-color: var(--off-white-surface); border: 1px solid var(--border-light); border-radius: var(--radius-sm); padding: 12px 16px; margin: 16px 0;">
-                  <strong style="color: var(--primary-orange); font-size: 0.85rem; display: block; margin-bottom: 4px;">Pre-Print CAD Status</strong>
-                  <span style="font-size: 0.9rem; color: var(--dark-charcoal);">The CAD design and material selection are ready for the next stage of physical prototyping.</span>
-                </div>
+              <!-- Pre-Print CAD Status (Version 2) -->
+              <div style="background-color: var(--off-white-surface); border: 1px solid var(--border-light); border-radius: var(--radius-sm); padding: 12px 16px; margin: 16px 0;">
+                <strong style="color: var(--primary-orange); font-size: 0.85rem; display: block; margin-bottom: 4px;">Pre-Print CAD Status</strong>
+                <span style="font-size: 0.9rem; color: var(--dark-charcoal);">The CAD design and material selection are ready for the next stage of physical prototyping.</span>
               </div>
 
             </div>
             
             <div class="week-outcome-box">
               <span class="week-outcome-header">Sprint Outcome</span>
-              <p class="week-outcome-text v1-content">CAD finalisation, material evaluation, and initial 3D printed prototype fabrication successfully achieved.</p>
-              <p class="week-outcome-text v2-content">CAD finalisation and material selection completed; digital design fully prepared for physical fabrication.</p>
+              <p class="week-outcome-text">CAD finalisation and material selection completed; digital design fully prepared for physical fabrication.</p>
             </div>
           </article>
 
@@ -710,170 +577,13 @@
     </section>
 
     <!-- =========================================================================
-         8. HOW THE MECHANISM WORKS
+         7. MATERIALS & FABRICATION
          ========================================================================= -->
-    <section class="section" id="product">
+    <section class="section section-alt" id="materials">
       <div class="container">
         
         <header class="section-header">
-          <span class="section-badge">07 • Mechanical Architecture</span>
-          <h2 class="section-title">Inside the Mechanism</h2>
-          <p class="section-subtitle">How internal movement, calibrated springs, and mechanical locking function conceptually.</p>
-        </header>
-
-        <div class="mechanism-diagram-wrap">
-          
-          <!-- Pure CSS Step-by-Step Flow Diagram -->
-          <div class="mechanism-flow" aria-label="Mechanical Sensing Sequence">
-            
-            <div class="mech-step">
-              <span class="mech-step-num">STEP 01</span>
-              <h4 class="mech-step-title">Impact Event</h4>
-              <p class="mech-step-desc">Luggage experiences external shock or abrupt deceleration.</p>
-            </div>
-
-            <div class="mech-arrow" aria-hidden="true">↓</div>
-
-            <div class="mech-step">
-              <span class="mech-step-num">STEP 02</span>
-              <h4 class="mech-step-title">Mechanical Movement</h4>
-              <p class="mech-step-desc">Internal inertial mass begins displacement along guided linear track.</p>
-            </div>
-
-            <div class="mech-arrow" aria-hidden="true">↓</div>
-
-            <div class="mech-step">
-              <span class="mech-step-num">STEP 03</span>
-              <h4 class="mech-step-title">Threshold Reached</h4>
-              <p class="mech-step-desc">Kinetic force overcomes calibrated pre-loaded spring resistance.</p>
-            </div>
-
-            <div class="mech-arrow" aria-hidden="true">↓</div>
-
-            <div class="mech-step highlight">
-              <span class="mech-step-num">STEP 04</span>
-              <h4 class="mech-step-title">Mechanical Response &amp; Locking</h4>
-              <p class="mech-step-desc">Mechanical detent latches in position to permanently record the shock.</p>
-            </div>
-
-            <div class="mech-arrow" aria-hidden="true">↓</div>
-
-            <div class="mech-step highlight">
-              <span class="mech-step-num">STEP 05</span>
-              <h4 class="mech-step-title">Impact Indication</h4>
-              <p class="mech-step-desc">High-contrast status indicator displays in exterior viewing aperture.</p>
-            </div>
-
-          </div>
-
-          <!-- Technical Disclaimer Box (Mandatory Requirement) -->
-          <div class="disclaimer-box">
-            <span class="disclaimer-title">Engineering Status &amp; Testing Notice</span>
-            <p class="disclaimer-text">
-              The mechanism has been developed digitally, but its final real-world impact threshold and reliability still require physical testing and calibration.
-            </p>
-          </div>
-
-        </div>
-
-        <!-- Mechanism Core Principles Grid -->
-        <div class="mech-concepts-grid">
-          <div class="mech-concept-item">
-            <h4 class="mech-concept-title">Movement-Based Mechanism</h4>
-            <p class="mech-concept-desc">Utilizes the natural inertia of a weighted core sliding along a constrained channel upon bag impact.</p>
-          </div>
-          <div class="mech-concept-item">
-            <h4 class="mech-concept-title">Spring-Based Concept</h4>
-            <p class="mech-concept-desc">A calibrated compression spring keeps the mechanism stable during normal handling and casual travel vibration.</p>
-          </div>
-          <div class="mech-concept-item">
-            <h4 class="mech-concept-title">Mechanical Locking Flag</h4>
-            <p class="mech-concept-desc">Once the threshold is exceeded, a physical latch holds the indicator in place so the event cannot be reset unintentionally.</p>
-          </div>
-        </div>
-
-        <!-- Mechanism Image Placeholder Card -->
-        <article class="media-placeholder-card">
-          <img src="assets/mechanism.png" alt="ImpactOh Internal Mechanism Schematic and Kinematic Architecture" width="1200" height="800">
-          <div class="media-caption">
-            <span class="media-caption-text">Kinematic Spring &amp; Inertial Mass Architecture Diagram</span>
-            <span class="media-caption-badge">ASSET: assets/mechanism.png</span>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         9. CAD & FUSION 360
-         ========================================================================= -->
-    <section class="section section-alt">
-      <div class="container">
-        
-        <header class="section-header">
-          <span class="section-badge">08 • Digital Engineering</span>
-          <h2 class="section-title">From Concept to CAD</h2>
-          <p class="section-subtitle">Translating conceptual sketches into parametric models in Autodesk Fusion 360.</p>
-        </header>
-
-        <div class="cad-grid">
-          
-          <!-- CAD Modeling Card -->
-          <article class="cad-card">
-            <div class="cad-card-header">
-              <span class="cad-badge">SOLID MODELING</span>
-              <h3 class="cad-title">Parametric CAD Assembly</h3>
-              <p class="cad-desc">Product structure was created digitally with nested internal cavities, integrated mechanisms, and reviewed component placements.</p>
-            </div>
-            <figure class="cad-image-wrap">
-              <img src="assets/cad.png" alt="ImpactOh 3D CAD Assembly and Part Nesting" width="1200" height="800">
-            </figure>
-          </article>
-
-          <!-- Fusion 360 Card -->
-          <article class="cad-card">
-            <div class="cad-card-header">
-              <span class="cad-badge">DESIGN AUDIT</span>
-              <h3 class="cad-title">Fusion 360 Design Review</h3>
-              <p class="cad-desc">Examined physical clearances, motion paths, interference checks, and structural wall thicknesses before physical prototyping.</p>
-            </div>
-            <figure class="cad-image-wrap">
-              <img src="assets/fusion360.png" alt="Autodesk Fusion 360 Digital Workspace and Design Review" width="1200" height="800">
-            </figure>
-          </article>
-
-        </div>
-
-        <!-- Design Review Verification Points -->
-        <div class="cad-review-list">
-          <div class="review-item">
-            <div class="review-check">✓</div>
-            <h4 class="review-title">Component Placement</h4>
-            <p class="review-desc">All internal components positioned with proper balance and functional alignment.</p>
-          </div>
-          <div class="review-item">
-            <div class="review-check">✓</div>
-            <h4 class="review-title">Clearances Reviewed</h4>
-            <p class="review-desc">Sliding parts verified for smooth travel without friction binding.</p>
-          </div>
-          <div class="review-item">
-            <div class="review-check">✓</div>
-            <h4 class="review-title">Movement Paths Verified</h4>
-            <p class="review-desc">Kinematic linear travel paths confirmed inside the digital CAD environment.</p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         10. MATERIAL SELECTION
-         ========================================================================= -->
-    <section class="section">
-      <div class="container">
-        
-        <header class="section-header">
-          <span class="section-badge">09 • Materials &amp; Fabrication</span>
+          <span class="section-badge">06 • Materials &amp; Fabrication</span>
           <h2 class="section-title">Material Finalisation</h2>
           <p class="section-subtitle">Systematic assessment of physical properties required for luggage durability and prototyping.</p>
         </header>
@@ -930,368 +640,13 @@
 
         </div>
 
-        <!-- Material Selection Placeholder Card -->
-        <article class="media-placeholder-card">
-          <img src="assets/material.png" alt="Material Selection and Evaluation Matrix" width="1200" height="800">
-          <div class="media-caption">
-            <span class="media-caption-text">Material Evaluation Matrix: Physical Strength, Availability, and Prototyping Readiness</span>
-            <span class="media-caption-badge">ASSET: assets/material.png</span>
-          </div>
-        </article>
-
       </div>
     </section>
 
-    <!-- =========================================================================
-         11. PRODUCT STATUS
-         ========================================================================= -->
-    <section class="section section-alt" id="status">
-      <div class="container">
-        
-        <header class="section-header">
-          <span class="section-badge">10 • Project Transparency</span>
-          <h2 class="section-title">Current Development Status</h2>
-          <p class="section-subtitle">An honest overview distinguishing completed milestones from pending validation.</p>
-        </header>
-
-        <div class="status-dashboard-grid">
-          
-          <!-- Completed Milestones -->
-          <div class="status-card completed-card">
-            <div class="status-header">
-              <div class="status-headline">
-                <span>Completed</span>
-              </div>
-              <span class="status-count-badge completed-badge v1-content">12 / 12 Milestones Done</span>
-              <span class="status-count-badge completed-badge v2-content">11 / 11 Milestones Done</span>
-            </div>
-
-            <div class="status-list">
-              <div class="status-item"><span class="status-icon-check">✓</span> Problem Identification</div>
-              <div class="status-item"><span class="status-icon-check">✓</span> Existing Solution Research</div>
-              <div class="status-item"><span class="status-icon-check">✓</span> Market Research</div>
-              <div class="status-item"><span class="status-icon-check">✓</span> Product Concept</div>
-              <div class="status-item"><span class="status-icon-check">✓</span> Concept Pivot</div>
-              <div class="status-item"><span class="status-icon-check">✓</span> Mechanism Development</div>
-              <div class="status-item"><span class="status-icon-check">✓</span> Mechanism Finalisation</div>
-              <div class="status-item"><span class="status-icon-check">✓</span> CAD Design</div>
-              <div class="status-item"><span class="status-icon-check">✓</span> Fusion 360 Design Review</div>
-              <div class="status-item"><span class="status-icon-check">✓</span> Component Selection</div>
-              <div class="status-item"><span class="status-icon-check">✓</span> Material Selection</div>
-              
-              <!-- Version 1 Physical Prototype Item -->
-              <div class="status-item status-item v1-highlight v1-content">
-                <span class="status-icon-check">✓</span> Physical Prototype (3D Printed)
-              </div>
-            </div>
-          </div>
-
-          <!-- Pending Validation Milestones -->
-          <div class="status-card pending-card">
-            <div class="status-header">
-              <div class="status-headline">
-                <span>Pending Validation</span>
-              </div>
-              <span class="status-count-badge pending-badge v1-content">4 Milestones In Progress</span>
-              <span class="status-count-badge pending-badge v2-content">5 Milestones In Progress</span>
-            </div>
-
-            <div class="status-list">
-              <!-- Version 2 Physical Prototype Fabrication -->
-              <div class="status-item v2-highlight v2-content">
-                <span class="status-icon-hourglass">⏳</span> Physical Prototype Fabrication
-              </div>
-
-              <div class="status-item"><span class="status-icon-hourglass">⏳</span> Impact Testing</div>
-              <div class="status-item"><span class="status-icon-hourglass">⏳</span> Calibration</div>
-              <div class="status-item"><span class="status-icon-hourglass">⏳</span> Reliability Validation</div>
-              <div class="status-item"><span class="status-icon-hourglass">⏳</span> Final Product Refinement</div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- 3D Printed Prototype Placeholder (Version 1 Only) -->
-        <div class="v1-content" style="margin-top: 40px;">
-          <article class="media-placeholder-card">
-            <img src="assets/prototype.png" alt="3D Printed Prototype Validation (Version 1)" width="1200" height="800">
-            <div class="media-caption">
-              <span class="media-caption-text">Version 1 Physical Prototype: Additive Manufacturing Fabrication &amp; Dimensional Inspection</span>
-              <span class="media-caption-badge">VERSION 1 ONLY • assets/prototype.png</span>
-            </div>
-          </article>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         12. BUSINESS MODEL
-         ========================================================================= -->
-    <section class="section" id="business-model">
-      <div class="container">
-        
-        <header class="section-header">
-          <span class="section-badge">11 • Commercial Strategy</span>
-          <h2 class="section-title">Business Model</h2>
-          <p class="section-subtitle">Conceptual revenue streams developed during the 40-day startup sprint.</p>
-        </header>
-
-        <div class="business-cards-grid">
-          
-          <article class="business-card">
-            <span class="business-badge">STREAM 01</span>
-            <h3 class="business-title">Order Commission</h3>
-            <p class="business-desc">Intended direct-to-consumer and retail product sales revenue model for the base accessory and collectible faceplate drops.</p>
-            <div class="business-key-points">
-              <div class="business-point">Core accessory unit margins</div>
-              <div class="business-point">Interchangeable faceplate collections</div>
-            </div>
-          </article>
-
-          <article class="business-card">
-            <span class="business-badge">STREAM 02</span>
-            <h3 class="business-title">Delivery + Service Fee</h3>
-            <p class="business-desc">Delivery and service charges may be applied after commercial launch, with final logistics pricing still to be validated through physical trials.</p>
-            <div class="business-key-points">
-              <div class="business-point">Direct customer fulfillment</div>
-              <div class="business-point">Pricing to be validated post-launch</div>
-            </div>
-          </article>
-
-          <article class="business-card">
-            <span class="business-badge">STREAM 03</span>
-            <h3 class="business-title">Bulk / Event Orders</h3>
-            <p class="business-desc">Potential for customized bulk orders catering to travel agencies, event conferences, tour groups, universities, and corporate business partners.</p>
-            <div class="business-key-points">
-              <div class="business-point">Branded corporate partner editions</div>
-              <div class="business-point">Group travel identification badges</div>
-            </div>
-          </article>
-
-        </div>
-
-        <!-- Strict Academic Disclaimer Card -->
-        <aside class="business-disclaimer-card">
-          <p>
-            <strong>Development Notice:</strong> During the 40-day development period, the project primarily focused on research, product development, mechanism design and prototype readiness. Commercial sales figures, orders, and revenue projections remain strictly subject to post-validation launch.
-          </p>
-        </aside>
-
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         13. DEMO VS REAL
-         ========================================================================= -->
-    <section class="section section-dark">
-      <div class="container">
-        
-        <header class="section-header">
-          <span class="section-badge">12 • Scope Demarcation</span>
-          <h2 class="section-title">What's Demo vs Real?</h2>
-          <p class="section-subtitle">Clear boundary lines between completed development work and future testing phases.</p>
-        </header>
-
-        <div class="demo-real-grid">
-          
-          <!-- REAL SCOPE -->
-          <article class="reality-card real-card">
-            <span class="reality-badge real-badge">Real / Completed</span>
-            <h3 class="reality-title">Completed Engineering &amp; Research</h3>
-            <p class="reality-subtitle">Tangible research, architectural CAD files, component selection, and design iterations.</p>
-            
-            <div class="reality-items-list">
-              <div class="reality-item"><span class="real-check">✓</span> Problem research &amp; transit mapping</div>
-              <div class="reality-item"><span class="real-check">✓</span> Competitor research (e.g. ShockWatch benchmarking)</div>
-              <div class="reality-item"><span class="real-check">✓</span> Market research &amp; occasional-use pivot</div>
-              <div class="reality-item"><span class="real-check">✓</span> Product concept &amp; modular form factor</div>
-              <div class="reality-item"><span class="real-check">✓</span> Kinematic mechanism development</div>
-              <div class="reality-item"><span class="real-check">✓</span> Parametric CAD solid modeling</div>
-              <div class="reality-item"><span class="real-check">✓</span> Fusion 360 digital motion audit &amp; clearance review</div>
-              <div class="reality-item"><span class="real-check">✓</span> Component placement &amp; dimensions checked</div>
-              <div class="reality-item"><span class="real-check">✓</span> Material selection &amp; property analysis</div>
-              <div class="reality-item v1-content"><span class="real-check">✓</span> 3D-printed physical prototype</div>
-            </div>
-          </article>
-
-          <!-- DEMO / PENDING SCOPE -->
-          <article class="reality-card pending-card">
-            <span class="reality-badge pending-scope-badge">Demo / Pending Validation</span>
-            <h3 class="reality-title">Pending Testing &amp; Calibration</h3>
-            <p class="reality-subtitle">Physical validation steps that require structured drop-rig testing and manufacturing tooling.</p>
-            
-            <div class="reality-items-list">
-              <div class="reality-item v2-content"><span class="pending-dot">⏳</span> Physical prototype fabrication</div>
-              <div class="reality-item"><span class="pending-dot">⏳</span> Physical drop &amp; impact threshold testing</div>
-              <div class="reality-item"><span class="pending-dot">⏳</span> Spring rate calibration &amp; G-force tuning</div>
-              <div class="reality-item"><span class="pending-dot">⏳</span> Mechanical reliability &amp; false-trigger validation</div>
-              <div class="reality-item"><span class="pending-dot">⏳</span> Final product refinement based on drop data</div>
-              <div class="reality-item"><span class="pending-dot">⏳</span> Production-ready manufacturing &amp; injection tooling</div>
-            </div>
-          </article>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         14. FUTURE DEVELOPMENT ROADMAP
-         ========================================================================= -->
-    <section class="section" id="roadmap">
-      <div class="container">
-        
-        <header class="section-header">
-          <span class="section-badge">13 • Execution Roadmap</span>
-          <h2 class="section-title">What's Next?</h2>
-          <p class="section-subtitle">Seven structured phases from laboratory testing to commercial introduction.</p>
-        </header>
-
-        <div class="roadmap-container" aria-label="Future Development Roadmap">
-          
-          <!-- Step 01 -->
-          <div class="roadmap-step step-completed v1-content">
-            <span class="roadmap-num">01</span>
-            <h4 class="roadmap-title">Physical Prototype</h4>
-            <span class="roadmap-state-tag tag-done">Completed</span>
-          </div>
-
-          <div class="roadmap-step step-active v2-content">
-            <span class="roadmap-num">01</span>
-            <h4 class="roadmap-title">Physical Prototype</h4>
-            <span class="roadmap-state-tag tag-next">Next Step</span>
-          </div>
-
-          <!-- Step 02 -->
-          <div class="roadmap-step step-active v1-content">
-            <span class="roadmap-num">02</span>
-            <h4 class="roadmap-title">Impact Testing</h4>
-            <span class="roadmap-state-tag tag-next">Next Step</span>
-          </div>
-
-          <div class="roadmap-step v2-content">
-            <span class="roadmap-num">02</span>
-            <h4 class="roadmap-title">Impact Testing</h4>
-            <span class="roadmap-state-tag tag-future">Upcoming</span>
-          </div>
-
-          <!-- Step 03 -->
-          <div class="roadmap-step">
-            <span class="roadmap-num">03</span>
-            <h4 class="roadmap-title">Calibration</h4>
-            <span class="roadmap-state-tag tag-future">Upcoming</span>
-          </div>
-
-          <!-- Step 04 -->
-          <div class="roadmap-step">
-            <span class="roadmap-num">04</span>
-            <h4 class="roadmap-title">Design Refinement</h4>
-            <span class="roadmap-state-tag tag-future">Upcoming</span>
-          </div>
-
-          <!-- Step 05 -->
-          <div class="roadmap-step">
-            <span class="roadmap-num">05</span>
-            <h4 class="roadmap-title">Reliability Testing</h4>
-            <span class="roadmap-state-tag tag-future">Upcoming</span>
-          </div>
-
-          <!-- Step 06 -->
-          <div class="roadmap-step">
-            <span class="roadmap-num">06</span>
-            <h4 class="roadmap-title">Manufacturing Validation</h4>
-            <span class="roadmap-state-tag tag-future">Upcoming</span>
-          </div>
-
-          <!-- Step 07 -->
-          <div class="roadmap-step">
-            <span class="roadmap-num">07</span>
-            <h4 class="roadmap-title">Commercial Launch</h4>
-            <span class="roadmap-state-tag tag-future">Upcoming</span>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         15. TEAM
-         ========================================================================= -->
-    <section class="section section-alt" id="team">
-      <div class="container">
-        
-        <header class="section-header">
-          <span class="section-badge">14 • Project Leadership</span>
-          <h2 class="section-title">The Team Behind ImpactOh</h2>
-          <p class="section-subtitle">Multidisciplinary student team uniting problem discovery and hardware design.</p>
-        </header>
-
-        <div class="team-statement-box">
-          <p class="team-statement">
-            A multidisciplinary team working from problem research to product development.
-          </p>
-        </div>
-
-        <div class="team-grid">
-          
-          <article class="team-card">
-            <div class="team-avatar-box">L</div>
-            <h3 class="team-role">Lead</h3>
-            <span class="team-subtitle">Project Direction</span>
-            <p class="team-focus">Overseeing project roadmap, problem research synthesis, and sprint coordination.</p>
-          </article>
-
-          <article class="team-card">
-            <div class="team-avatar-box">D</div>
-            <h3 class="team-role">Product Designer</h3>
-            <span class="team-subtitle">CAD &amp; Hardware</span>
-            <p class="team-focus">Kinematic mechanism modeling, Autodesk Fusion 360 review, and prototyping tolerances.</p>
-          </article>
-
-          <article class="team-card">
-            <div class="team-avatar-box">M</div>
-            <h3 class="team-role">Marketing</h3>
-            <span class="team-subtitle">Market Research</span>
-            <p class="team-focus">Competitor analysis, customer positioning pivot, and brand aesthetic strategy.</p>
-          </article>
-
-          <article class="team-card">
-            <div class="team-avatar-box">F</div>
-            <h3 class="team-role">Finance</h3>
-            <span class="team-subtitle">Unit Economics</span>
-            <p class="team-focus">Material cost modeling, manufacturing feasibility, and business model structure.</p>
-          </article>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- =========================================================================
-         16. FINAL CTA
-         ========================================================================= -->
-    <section class="section">
-      <div class="container">
-        
-        <div class="cta-banner">
-          <h2 class="cta-title">From an idea to a <span>real product</span>.</h2>
-          <p class="cta-text">
-            ImpactOh's 40-day journey moved from identifying an overlooked problem to researching existing solutions, developing a mechanical mechanism, creating CAD designs, reviewing the design in Fusion 360 and preparing the product for physical validation.
-          </p>
-          <div class="cta-actions">
-            <a href="#development" class="btn btn-primary btn-lg">Explore the Journey</a>
-            <a href="#top-nav" class="btn btn-dark btn-lg">Back to Top ↑</a>
-          </div>
-        </div>
-
-      </div>
-    </section>
   </main>
 
   <!-- =========================================================================
-       17. FOOTER
+       8. FOOTER
        ========================================================================= -->
   <footer class="footer">
     <div class="container">
@@ -1300,7 +655,7 @@
         
         <div class="footer-brand-info">
           <a href="#home" aria-label="ImpactOh Homepage">
-            <img src="assets/impactoh-logo-light.png" alt="ImpactOh Logo" class="footer-logo-img">
+            <img src="logo.jpeg" alt="ImpactOh Logo" class="footer-logo-img">
           </a>
           <p class="footer-motto">Customisation meets impact detection.</p>
           <p class="footer-desc">
@@ -1310,31 +665,28 @@
 
         <nav class="footer-nav-grid" aria-label="Footer Navigation">
           <div>
-            <h4 class="footer-col-title">Project</h4>
+            <h4 class="footer-col-title">Overview</h4>
             <ul class="footer-links-list">
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About ImpactOh</a></li>
               <li><a href="#problem">The Problem</a></li>
-              <li><a href="#research">Research &amp; Competitors</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 class="footer-col-title">Engineering</h4>
+            <h4 class="footer-col-title">Research</h4>
             <ul class="footer-links-list">
-              <li><a href="#product">Inside Mechanism</a></li>
+              <li><a href="#research">Market Benchmarking</a></li>
+              <li><a href="#market-research">Market Research</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Development</h4>
+            <ul class="footer-links-list">
               <li><a href="#development">40-Day Journey</a></li>
-              <li><a href="#status">Development Status</a></li>
-              <li><a href="#roadmap">Future Roadmap</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 class="footer-col-title">Strategy</h4>
-            <ul class="footer-links-list">
-              <li><a href="#business-model">Business Model</a></li>
-              <li><a href="#team">The Team</a></li>
-              <li><a href="#top-nav">Back to Top</a></li>
+              <li><a href="#materials">Materials &amp; Fabrication</a></li>
+              <li><a href="#top-nav">Back to Top ↑</a></li>
             </ul>
           </div>
         </nav>
